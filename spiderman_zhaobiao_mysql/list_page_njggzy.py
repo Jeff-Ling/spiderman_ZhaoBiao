@@ -12,7 +12,7 @@ import datetime
 import time
 
 # 选择要扒的页数
-pages = 2
+pages = 7
 
 first_index_url = 'http://njggzy.nanjing.gov.cn/njweb/zfcg/067001/067001001/moreinfozfcg.html'
 other_index_url = 'http://njggzy.nanjing.gov.cn/njweb/zfcg/067001/067001001/'
@@ -77,7 +77,7 @@ for url in urls:
     data['date'] = date_time
     data['content'] = content
     data['url'] = url
-    data['accountName'] = '中国政府采购网'
+    data['accountName'] = '南京市公共资源交易中心'
     insertmysql.insert_mysql(data)
 
     print ('-----------------------------')

@@ -74,7 +74,7 @@ class InsertMySql(object):
                 # # sql = "INSERT INTO app_matrix_article (isuse,releasetime,create_date_time,id,accountid,title,display_image_url,content) VALUES (0,'%s',CURDATE(),UUID_SHORT(),(select id from app_matrix where source='1' and name='美好滁州'), %s,'图片', %s)"
                 # param = (data['info'], data['time'], data['title'],data['content'],data['url'])
 
-                sql = "INSERT INTO zhaobiao_details (isuse,id,accountName,create_date_time,releasetime,title,content,display_url) VALUES (0,UUID_SHORT(),%s,CURDATE(),%s,%s,%s,%s)"
+                sql = "INSERT INTO zhaobiao_details (isuse,id,accountName,createdatetime,releasetime,title,content,displayurl) VALUES (0,UUID_SHORT(),%s,CURDATE(),%s,%s,%s,%s)"
                 # sql = "INSERT INTO app_matrix_article (isuse,releasetime,create_date_time,id,accountid,title,display_image_url,content) VALUES (0,'%s',CURDATE(),UUID_SHORT(),(select id from app_matrix where source='1' and name='美好滁州'), %s,'图片', %s)"
                 param = (data['accountName'], data['date'], data['title'], data['content'], data['url'])
 
